@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>User Registeration</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>      
+   </head>
+   <body>
+      <nav class="navbar navbar-dark  bg-warning">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="/">Brill Booking System</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+               <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="row">
+         <div class="col-sm-4">
+         </div>
+         <div class="col-sm-4">
+            <h4>User Registration Form</h4>
+            <form action="/registrationInfo" method="POST">
+               <div class="form-group">
+                  <label for="usr">First Name:</label>
+                  <input name="fName" type="text" class="form-control" id="fName" required>
+               </div>
+               <div class="form-group">
+                  <label for="usr">Last Name:</label>
+                  <input name="lName" type="text" class="form-control" id="lName" required>
+               </div>
+               <div class="form-group">
+                  <label for="pwd">Email:</label>
+                  <input name="email" type="email" class="form-control" id="pwd" required>
+               </div>
+               <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input name="password" type="password" class="form-control" id="password" required>
+               </div>
+               <br>
+               <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
